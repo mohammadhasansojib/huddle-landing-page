@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
 
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
 
 :root {
     --main-font: 'Open Sans', sans-serif;
@@ -16,3 +25,296 @@
 
     --main-font-size: 18px;
 }
+
+
+
+
+.container{
+    width: 90%;
+    margin: auto;
+    max-width: 1600px;
+}
+
+
+
+
+
+
+/**
+* ! style rules for button without font-size
+**/
+
+.pink-btn,
+.white-btn{
+    font-family: var(--main-font);
+    padding: 20px 80px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    background-color: white;
+    color: var(--neutral-color-2);
+    box-shadow: 1px 1px 9px -6px var(--neutral-color-2);
+}
+.pink-btn{
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: none;
+}
+
+
+
+
+
+
+/**
+* ! style rules for title without font-size
+**/
+
+.common-title{
+    color: var(--neutral-color-2);
+    font-family: var(--heading-font);
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+/**
+* ! style rules for description without color
+**/
+
+.common-description{
+    font-family: var(--main-font);
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/*===============HEADER SECTION START=================*/
+.header{
+    background: url(../images/bg-hero-desktop.svg), linear-gradient(to right, rgba(237,251,254,255), rgba(237,251,254,255));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*===============HEADER SECTION END=================*/
+
+
+
+
+
+
+
+
+
+
+/*===============NAVBAR SECTION START=================*/
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+nav .container .logo img{
+    width: 240px;
+    cursor: pointer;
+}
+nav .container .btn button{
+    font-size: 18px;
+    font-weight: 700;
+
+}
+/*===============NAVBAR SECTION END=================*/
+
+
+
+
+
+
+
+
+
+
+/*===============HERO SECTION START=================*/
+.hero-sec{
+    width: 100%;
+}
+.hero-sec .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: 50px;
+    
+    padding: 50px 0;
+}
+
+.hero-sec__text{
+    flex-basis: calc(45% - 25px);
+}
+.hero-sec__text h2{
+    font-size: 50px;
+}
+.hero-sec__text p{
+    color: var(--neutral-color-2);
+    font-weight: 600;
+    margin: 40px 0;
+}
+.hero-sec__text button{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hero-sec__img{
+    flex-basis: calc(55% - 25px);
+}
+.hero-sec__img img{
+    width: 100%;
+}
+/*===============HERO SECTION END=================*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============MEDIA QUERI START=================*/
+@media screen and (max-width: 1440px){
+    .hero-sec__text h2{
+        font-size: 45px;
+    }
+    .hero-sec__text p{
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    .hero-sec__text h2{
+        font-size: 40px;
+    }
+    .hero-sec__text p{
+        font-size: 16px;
+        margin: 30px 0;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 992px){
+    .hero-sec .container{
+        display: flex;
+    }
+    .hero-sec__text{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .hero-sec__img{
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+
+    .white-btn,
+    .pink-btn{
+        padding: 15px 50px;
+    }
+
+
+
+
+
+    nav .container .logo img{
+        width: 200px;
+    }
+    nav .container .btn button{
+        font-size: 16px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 574px){
+    .header{
+        background: url(../images/bg-hero-mobile.svg), linear-gradient(to right, rgba(237,251,254,255), rgba(237,251,254,255));
+    }
+
+
+
+
+
+
+
+    .white-btn,
+    .pink-btn{
+        padding: 10px 40px;
+    }
+
+
+
+
+
+    nav .container .logo img{
+        width: 150px;
+    }
+    nav .container .btn button{
+        font-size: 14px;
+    }
+
+
+
+
+
+    .hero-sec__text h2{
+        font-size: 30px;
+    }
+    .hero-sec__text p{
+        font-size: 16px;
+        margin: 20px 0;
+    }
+}
+/*===============MEDIA QUERI END=================*/
