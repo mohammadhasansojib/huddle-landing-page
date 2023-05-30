@@ -281,6 +281,9 @@ nav .container .btn button{
 @media screen and (max-width: 574px){
     .header{
         background: url(../images/bg-hero-mobile.svg), linear-gradient(to right, rgba(237,251,254,255), rgba(237,251,254,255));
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
 
