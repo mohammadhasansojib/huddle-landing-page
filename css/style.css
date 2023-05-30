@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+
+:root {
+    --main-font: 'Open Sans', sans-serif;
+    --heading-font: 'Poppins', sans-serif;
+
+
+    --primary-color: #ff52bf;
+
+    --neutral-color-1: #ebfbff;
+    --neutral-color-2: #00252e;
+    --neutral-color-3: #808d99;
+
+
+    --main-font-size: 18px;
+}
