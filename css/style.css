@@ -195,6 +195,61 @@ nav .container .btn button{
 
 
 
+/*===============SERVICE MSG SECTION START=================*/
+.service-msg-sec .container{
+    padding: 200px 0;
+
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+
+    gap: 50px;
+}
+.service-msg-sec .container .card{
+    box-shadow: 1px 1px 47px -24px #999;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-flow: row wrap;
+
+    gap: 30px;
+
+    padding: 60px 40px 60px 150px;
+}
+.service-msg-sec .container .card .card__text-sec{
+    flex-basis: 40%;
+}
+.service-msg-sec .container .card .card__text-sec h3{
+    color: var(--neutral-color-2);
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.service-msg-sec .container .card p{
+    color: var(--neutral-color-3);
+}
+.service-msg-sec .container .card .card__img-sec{
+    flex-basis: 40%;
+}
+.service-msg-sec .container .card .card__img-sec img{
+    width: 100%;
+}
+/*===============SERVICE MSG SECTION END=================*/
+
+
+
+
+
+
+
+
+
+
+
+
 /*===============MEDIA QUERI START=================*/
 @media screen and (max-width: 1440px){
     .hero-sec__text h2{
@@ -218,6 +273,14 @@ nav .container .btn button{
         font-size: 16px;
         margin: 30px 0;
     }
+
+
+
+
+
+    .service-msg-sec .container .card p{
+        font-size: 18px;
+    }
 }
 
 
@@ -236,6 +299,30 @@ nav .container .btn button{
     }
     .hero-sec__img{
         flex-basis: 100%;
+    }
+
+
+
+
+
+
+
+    .service-msg-sec .container .card{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+
+        flex-flow: column wrap;
+    
+        padding: 60px;
+        text-align: center;
+    }
+    .service-msg-sec .container .card:nth-child(odd) .card__text-sec{
+        order: 2;
+    }
+    .service-msg-sec .container .card .card__img-sec{
+        width: 90%;
     }
 }
 
@@ -318,6 +405,25 @@ nav .container .btn button{
     .hero-sec__text p{
         font-size: 16px;
         margin: 20px 0;
+    }
+
+
+
+
+
+
+
+
+
+
+    .service-msg-sec .container .card .card__img-sec{
+        width: 100%;
+    }
+    .service-msg-sec .container .card .card__text-sec h3{
+        font-size: 30px;
+    }
+    .service-msg-sec .container .card p{
+        font-size: 16px;
     }
 }
 /*===============MEDIA QUERI END=================*/
