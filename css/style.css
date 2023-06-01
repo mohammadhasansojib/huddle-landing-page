@@ -198,6 +198,7 @@ nav .container .btn button{
 /*===============SERVICE MSG SECTION START=================*/
 .service-msg-sec .container{
     padding: 200px 0;
+    padding-bottom: 400px;
 
     display: flex;
     align-items: center;
@@ -238,6 +239,120 @@ nav .container .btn button{
     width: 100%;
 }
 /*===============SERVICE MSG SECTION END=================*/
+
+
+
+
+
+
+
+
+
+
+/*===============COMMUNITY BOX START=================*/
+.community-box{
+    padding: 70px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 1px 1px 47px -24px #999;
+
+    width: 992px;
+    background-color: white;
+
+    position: absolute;
+    top: -35%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.community-box h3{
+    font-size: 40px;
+}
+.community-box button{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 35px;
+    border-radius: 40px;
+    padding: 25px 90px;
+}
+/*===============COMMUNITY BOX END=================*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============FOOTER SECTION START=================*/
+.footer-sec{
+    background-color: var(--neutral-color-2);
+    color: white;
+
+    padding: 200px 0 100px 0;
+
+    position: relative;
+}
+.footer-sec .main-footer .link-and-location{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+    font-size: 20px;
+    color: var(--neutral-color-1);
+    font-family: var(--main-font);
+}
+.footer-sec .main-footer .link-and-location .row a{
+    color: var(--neutral-color-1);
+    display: block;
+    margin: 30px 0;
+}
+.footer-sec .main-footer .link-and-location .row-1{
+    width: 35%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-sec .main-footer .link-and-location .row-1 img{
+    margin-right: 20px;
+}
+.footer-sec .main-footer .link-and-location .row-2,
+.footer-sec .main-footer .link-and-location .row-3{
+    width: 20%;
+}
+.footer-sec .main-footer .link-and-location .row-4{
+    width: 25%;
+}
+.footer-sec .main-footer .link-and-location .row-4 i{
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 2px solid var(--neutral-color-1);
+
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    cursor: pointer;
+}
+.footer-sec .main-footer .copyright{
+    margin-top: 40px;
+    text-align: right;
+}
+.footer-sec .main-footer .copyright span{
+    font-size: 14px;
+    color: var(--neutral-color-1);
+    font-family: var(--main-font);
+}
+/*===============FOOTER SECTION END=================*/
+
+
+
+
 
 
 
@@ -323,6 +438,66 @@ nav .container .btn button{
     }
     .service-msg-sec .container .card .card__img-sec{
         width: 90%;
+    }
+
+
+
+
+
+
+
+
+    .community-box{
+        width: 80%;
+    
+        position: absolute;
+        top: -200px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .community-box h3{
+        font-size: 30px;
+    }
+    .community-box button{
+        font-size: 20px;
+        padding: 20px 70px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .footer-sec .main-footer .link-and-location{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 40px;
+
+        flex-direction: column;
+        text-align: left;
+    }
+    .footer-sec .main-footer .link-and-location .row-1,
+    .footer-sec .main-footer .link-and-location .row-2,
+    .footer-sec .main-footer .link-and-location .row-3,
+    .footer-sec .main-footer .link-and-location .row-4{
+        width: 100%;
+    }
+    .footer-sec .main-footer .link-and-location .row-4{
+        text-align: center;
+    }
+    .footer-sec .main-footer .copyright{
+        text-align: center;
+    }
+    .footer-sec .main-footer .copyright span{
+        font-size: 14px;
+        color: var(--neutral-color-1);
+        font-family: var(--main-font);
     }
 }
 
@@ -424,6 +599,23 @@ nav .container .btn button{
     }
     .service-msg-sec .container .card p{
         font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .community-box h3{
+        font-size: 25px;
+    }
+    .community-box button{
+        font-size: 15px;
+        padding: 10px 50px;
     }
 }
 /*===============MEDIA QUERI END=================*/
